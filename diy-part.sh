@@ -11,14 +11,14 @@
 #
 
 # Modify Default Hostname
-sed -i 's/ImmortalWrt/NekoHome/g' package/base-files/files/bin/config_generate
+sed -i 's/ImmortalWrt/zyhome/g' package/base-files/files/bin/config_generate
 
 # Modify Default Timezone 
 sed -i 's/UTC/Asia\/Shanghai/g' package/base-files/files/bin/config_generate
 
 # Modify Default mtwifi-cfg WiFi SSID
-sed -i 's/ImmortalWrt-2.4G/NekoHome/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-sed -i 's/ImmortalWrt-5G/NekoHome-5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+sed -i 's/ImmortalWrt-2.4G/AP1/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+sed -i 's/ImmortalWrt-5G/AP1-5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 
 # Modify Default Software Source
 sed -i 's/mirrors.vsean.net\/openwrt/mirrors.pku.edu.cn\/immortalwrt/g' package/emortal/default-settings/files/99-default-settings-chinese
